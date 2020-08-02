@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "598156139941",
+    "firebase_url": "https://pidi-a5a30.firebaseio.com",
+    "project_id": "pidi-a5a30",
+    "storage_bucket": "pidi-a5a30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598156139941:android:b981bdf46ae1ce5165dc4c",
+        "android_client_info": {
+          "package_name": "com.fluidappsegames.idonelist.idonelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598156139941-625cbsuvdeamhftk9aqbs2bbu7o7kccv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmf7xnAK6ZyFhILBhKseYAmtwqU8N9S2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598156139941-625cbsuvdeamhftk9aqbs2bbu7o7kccv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "598156139941-9149fatdjuiu3bun17s0rl5ks6j8u19a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fluidappsegames.idonelist.idonelist"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
