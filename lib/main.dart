@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:idonelist/HomePage.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:idonelist/View/home_page.dart';
+import 'package:idonelist/Widget/constants.dart';
+import 'package:idonelist/Widget/container_text.dart';
+import 'package:idonelist/Widget/title_widget.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,13 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'IdoneList',
       theme: ThemeData(
-
-
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'IdoneList'),
     );
   }
 }
@@ -33,45 +36,41 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
 
-  void _incrementCounter() {
-    Navigator.pushReplacement(
-      context, PageRouteBuilder(
-        transitionDuration: Duration(milliseconds: 0),
-        pageBuilder: (_, __, ___) => HomePage()),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-      appBar: AppBar(
-
-        title: Text(widget.title),
-      ),
-      body: Center(
-
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+    return Stack(
+      children: <Widget>[
+        SplashScreen(
+          seconds: 5,
+          navigateAfterSeconds: HomePage(),
+          loaderColor: Colors.transparent,
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+        Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          decoration: Contants.decorationBackground,
+        ),
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Center(
+                child: SvgPicture.asset(
+                    'imagens/check.svg',
+                    width: 111,
+                    height: 30,
+                    fit: BoxFit.fill
+                )
+            ),
+           
+
+          ],
+        )
+      ],
     );
   }
 }
