@@ -7,4 +7,5 @@ Using Design Pattern MVP,
  simple_animations,
  table_calendar,
  path_provider,
- splashscreen
+ splashscreen,
+ firebase_admob
