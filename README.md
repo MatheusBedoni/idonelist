@@ -1,8 +1,4 @@
-# idonelist
 
-A new Flutter application.
-
-## Getting Started
 
 IdoneList is a projects created by Matheus bedoni using Flutter
 
