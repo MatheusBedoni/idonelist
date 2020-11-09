@@ -2,6 +2,8 @@
 
 IdoneList is a projects created by Matheus bedoni using Flutter
 
+You can download this app: https://play.google.com/store/apps/details?id=com.fluidappsegames.idonelist.idonelist
+
 Using Design Pattern MVP,
  SqLite,
  simple_animations,
