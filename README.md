@@ -1,6 +1,6 @@
 
 
-IdoneList is a projects created by Matheus bedoni using Flutter
+IdoneList is a projects created by Matheus bedoni using Flutter test
 
 You can download this app: https://play.google.com/store/apps/details?id=com.fluidappsegames.idonelist.idonelist
 
